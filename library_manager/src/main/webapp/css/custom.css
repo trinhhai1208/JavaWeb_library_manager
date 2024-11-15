@@ -1,0 +1,44 @@
+.btn-return-book {
+	border: none;
+	background-color: rgba(0,0,0,0);
+	font-size: 20px;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    border: 2px solid #ccc;
+    border-radius: 25px;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.search-container input {
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 25px 0 0 25px;
+    flex: 1;
+}
+
+.search-container button {
+    background-color: #007BFF;
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 0 25px 25px 0;
+    cursor: pointer;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-container button:hover {
+    background-color: #0056b3;
+}
+
+.search-container button i {
+    font-size: 16px;
+}
