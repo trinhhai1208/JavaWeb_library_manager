@@ -6,23 +6,25 @@ import java.sql.SQLException;
 import java.util.Stack;
 
 public class ConnectionPoolImpl implements ConnectionPool {
+    private static ConnectionPool cp = null;
     private String username;
     private String password;
-    private String driver = "com.mysql.cj.jdbc.Driver";
+    private String driver;
     private String url;
     private Stack<Connection> pool;
 
     public ConnectionPoolImpl() {
+    	this.driver = "com.mysql.cj.jdbc.Driver";
+        this.username = "root";
+        this.password = "123456";
+        this.url = "jdbc:mysql://localhost:3306/library_manager";
         try {
             Class.forName(this.driver);
         } catch (ClassNotFoundException var2) {
             var2.printStackTrace();
         }
 
-        this.username = "root";
-        this.password = "123456";
-        this.url = "jdbc:mysql://localhost:3306/library_manager";
-        this.pool = new Stack();
+        this.pool = new Stack<Connection> ();
     }
 
     public Connection getConnection(String objectName) throws SQLException {
@@ -30,16 +32,26 @@ public class ConnectionPoolImpl implements ConnectionPool {
             System.out.println(objectName + "has created a new connection.");
             return DriverManager.getConnection(this.url, this.username, this.password);
         } else {
-            System.out.println(objectName + "has taken a connection.");
+            System.out.println(objectName + "have popped the connection.");
             return (Connection)this.pool.pop();
         }
     }
 
-    public void releaseConnection(Connection con, String objectName) throws SQLException {
-        System.out.println(objectName + "has released a connection.");
-        this.pool.push(con);
+    public static ConnectionPool getInstance() {
+        if (cp == null) {
+            synchronized (ConnectionPoolImpl.class) {
+                if (cp == null) {
+                    cp = new ConnectionPoolImpl();
+                }
+            }
+        }
+        return cp;
     }
 
+    public void releaseConnection(Connection con, String objectName) throws SQLException {
+        System.out.println(objectName + "have pushed a connection.");
+        this.pool.push(con);
+    }
     protected void finalize() throws Throwable {
         this.pool.clear();
         this.pool = null;
