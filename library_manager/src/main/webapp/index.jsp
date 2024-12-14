@@ -80,139 +80,10 @@
 				</a></li>
 				<!-- End Search Icon-->
 
-				<li class="nav-item dropdown"><a class="nav-link nav-icon"
-					href="#" data-bs-toggle="dropdown"> <i class="bi bi-bell"></i>
-						<span class="badge bg-primary badge-number">4</span>
-				</a> <!-- End Notification Icon -->
-
-					<ul
-						class="dropdown-menu dropdown-menu-end dropdown-menu-arrow notifications">
-						<li class="dropdown-header">You have 4 new notifications <a
-							href="#"><span class="badge rounded-pill bg-primary p-2 ms-2">View
-									all</span></a>
-						</li>
-						<li>
-							<hr class="dropdown-divider">
-						</li>
-
-						<li class="notification-item"><i
-							class="bi bi-exclamation-circle text-warning"></i>
-							<div>
-								<h4>Lorem Ipsum</h4>
-								<p>Quae dolorem earum veritatis oditseno</p>
-								<p>30 min. ago</p>
-							</div></li>
-
-						<li>
-							<hr class="dropdown-divider">
-						</li>
-
-						<li class="notification-item"><i
-							class="bi bi-x-circle text-danger"></i>
-							<div>
-								<h4>Atque rerum nesciunt</h4>
-								<p>Quae dolorem earum veritatis oditseno</p>
-								<p>1 hr. ago</p>
-							</div></li>
-
-						<li>
-							<hr class="dropdown-divider">
-						</li>
-
-						<li class="notification-item"><i
-							class="bi bi-check-circle text-success"></i>
-							<div>
-								<h4>Sit rerum fuga</h4>
-								<p>Quae dolorem earum veritatis oditseno</p>
-								<p>2 hrs. ago</p>
-							</div></li>
-
-						<li>
-							<hr class="dropdown-divider">
-						</li>
-
-						<li class="notification-item"><i
-							class="bi bi-info-circle text-primary"></i>
-							<div>
-								<h4>Dicta reprehenderit</h4>
-								<p>Quae dolorem earum veritatis oditseno</p>
-								<p>4 hrs. ago</p>
-							</div></li>
-
-						<li>
-							<hr class="dropdown-divider">
-						</li>
-						<li class="dropdown-footer"><a href="#">Show all
-								notifications</a></li>
-
-					</ul> <!-- End Notification Dropdown Items --></li>
-				<!-- End Notification Nav -->
-
-				<li class="nav-item dropdown"><a class="nav-link nav-icon"
-					href="#" data-bs-toggle="dropdown"> <i
-						class="bi bi-chat-left-text"></i> <span
-						class="badge bg-success badge-number">3</span>
-				</a> <!-- End Messages Icon -->
-
-					<ul
-						class="dropdown-menu dropdown-menu-end dropdown-menu-arrow messages">
-						<li class="dropdown-header">You have 3 new messages <a
-							href="#"><span class="badge rounded-pill bg-primary p-2 ms-2">View
-									all</span></a>
-						</li>
-						<li>
-							<hr class="dropdown-divider">
-						</li>
-
-						<li class="message-item"><a href="#"> <img
-								src="assets/img/messages-1.jpg" alt="" class="rounded-circle">
-								<div>
-									<h4>Maria Hudson</h4>
-									<p>Velit asperiores et ducimus soluta repudiandae labore
-										officia est ut...</p>
-									<p>4 hrs. ago</p>
-								</div>
-						</a></li>
-						<li>
-							<hr class="dropdown-divider">
-						</li>
-
-						<li class="message-item"><a href="#"> <img
-								src="assets/img/messages-2.jpg" alt="" class="rounded-circle">
-								<div>
-									<h4>Anna Nelson</h4>
-									<p>Velit asperiores et ducimus soluta repudiandae labore
-										officia est ut...</p>
-									<p>6 hrs. ago</p>
-								</div>
-						</a></li>
-						<li>
-							<hr class="dropdown-divider">
-						</li>
-
-						<li class="message-item"><a href="#"> <img
-								src="assets/img/messages-3.jpg" alt="" class="rounded-circle">
-								<div>
-									<h4>David Muldon</h4>
-									<p>Velit asperiores et ducimus soluta repudiandae labore
-										officia est ut...</p>
-									<p>8 hrs. ago</p>
-								</div>
-						</a></li>
-						<li>
-							<hr class="dropdown-divider">
-						</li>
-
-						<li class="dropdown-footer"><a href="#">Show all messages</a>
-						</li>
-
-					</ul> <!-- End Messages Dropdown Items --></li>
-				<!-- End Messages Nav -->
-
 				<li class="nav-item dropdown pe-3"><a
 					class="nav-link nav-profile d-flex align-items-center pe-0"
 					href="#" data-bs-toggle="dropdown"> <img
-						src="img/profile-img.jpg" alt="Profile"
+						src="img/logox.png" alt="Profile"
 						class="rounded-circle"> <span
 						class="d-none d-md-block dropdown-toggle ps-2">Admin</span>
 				</a> <!-- End Profile Iamge Icon -->
@@ -220,36 +91,11 @@
 					<ul
 						class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
 						<li class="dropdown-header">
-							<h6>Kevin Anderson</h6> <span>Web Designer</span>
+							<h6>Quản trị viên</h6>
 						</li>
 						<li>
 							<hr class="dropdown-divider">
 						</li>
-
-						<li><a class="dropdown-item d-flex align-items-center"
-							href="users-profile.html"> <i class="bi bi-person"></i> <span>My
-									Profile</span>
-						</a></li>
-						<li>
-							<hr class="dropdown-divider">
-						</li>
-
-						<li><a class="dropdown-item d-flex align-items-center"
-							href="users-profile.html"> <i class="bi bi-gear"></i> <span>Account
-									Settings</span>
-						</a></li>
-						<li>
-							<hr class="dropdown-divider">
-						</li>
-
-						<li><a class="dropdown-item d-flex align-items-center"
-							href="pages-faq.html"> <i class="bi bi-question-circle"></i>
-								<span>Need Help?</span>
-						</a></li>
-						<li>
-							<hr class="dropdown-divider">
-						</li>
-
 						<li><a class="dropdown-item d-flex align-items-center"
 							href="/library_manager/login"> <i class="bi bi-box-arrow-right"></i> <span>Đăng xuất</span>
 						</a></li>
@@ -381,7 +227,7 @@
 			<div class="row">
 
 				<!-- Left side columns -->
-				<div class="col-lg-8">
+				<div class="col-lg-12">
 					<div class="row">
 
 						<!-- Sales Card -->
@@ -652,168 +498,7 @@
 				</div>
 				<!-- End Left side columns -->
 
-				<!-- Right side columns -->
-				<div class="col-lg-4">
-
-					<!-- Budget Report -->
-          <div class="card">
-            <div class="filter">
-              <a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots"></i></a>
-              <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
-                <li class="dropdown-header text-start">
-                  <h6>Filter</h6>
-                </li>
-
-                <li><a class="dropdown-item" href="#">Today</a></li>
-                <li><a class="dropdown-item" href="#">This Month</a></li>
-                <li><a class="dropdown-item" href="#">This Year</a></li>
-              </ul>
-            </div>
-
-            <div class="card-body pb-0">
-              <h5 class="card-title">Budget Report <span>| This Month</span></h5>
-
-              <div id="budgetChart" style="min-height: 400px;" class="echart"></div>
-
-              <script>
-                document.addEventListener("DOMContentLoaded", () => {
-                  var budgetChart = echarts.init(document.querySelector("#budgetChart")).setOption({
-                    legend: {
-                      data: ['Allocated Budget', 'Actual Spending']
-                    },
-                    radar: {
-                      // shape: 'circle',
-                      indicator: [{
-                          name: 'Sales',
-                          max: 6500
-                        },
-                        {
-                          name: 'Administration',
-                          max: 16000
-                        },
-                        {
-                          name: 'Information Technology',
-                          max: 30000
-                        },
-                        {
-                          name: 'Customer Support',
-                          max: 38000
-                        },
-                        {
-                          name: 'Development',
-                          max: 52000
-                        },
-                        {
-                          name: 'Marketing',
-                          max: 25000
-                        }
-                      ]
-                    },
-                    series: [{
-                      name: 'Budget vs spending',
-                      type: 'radar',
-                      data: [{
-                          value: [4200, 3000, 20000, 35000, 50000, 18000],
-                          name: 'Allocated Budget'
-                        },
-                        {
-                          value: [5000, 14000, 28000, 26000, 42000, 21000],
-                          name: 'Actual Spending'
-                        }
-                      ]
-                    }]
-                  });
-                });
-              </script>
-
-            </div>
-          </div><!-- End Budget Report -->
-
-					<!-- Website Traffic -->
-					<div class="card">
-						<div class="filter">
-							<a class="icon" href="#" data-bs-toggle="dropdown"><i
-								class="bi bi-three-dots"></i></a>
-							<ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
-								<li class="dropdown-header text-start">
-									<h6>Filter</h6>
-								</li>
-
-								<li><a class="dropdown-item" href="#">Today</a></li>
-								<li><a class="dropdown-item" href="#">This Month</a></li>
-								<li><a class="dropdown-item" href="#">This Year</a></li>
-							</ul>
-						</div>
-
-						<div class="card-body pb-0">
-							<h5 class="card-title">
-								Website Traffic <span>| Today</span>
-							</h5>
-
-							<div id="trafficChart" style="min-height: 400px;" class="echart"></div>
-
-							<script>
-                document.addEventListener("DOMContentLoaded", () => {
-                  echarts.init(document.querySelector("#trafficChart")).setOption({
-                    tooltip: {
-                      trigger: 'item'
-                    },
-                    legend: {
-                      top: '5%',
-                      left: 'center'
-                    },
-                    series: [{
-                      name: 'Access From',
-                      type: 'pie',
-                      radius: ['40%', '70%'],
-                      avoidLabelOverlap: false,
-                      label: {
-                        show: false,
-                        position: 'center'
-                      },
-                      emphasis: {
-                        label: {
-                          show: true,
-                          fontSize: '18',
-                          fontWeight: 'bold'
-                        }
-                      },
-                      labelLine: {
-                        show: false
-                      },
-                      data: [{
-                          value: 1048,
-                          name: 'Search Engine'
-                        },
-                        {
-                          value: 735,
-                          name: 'Direct'
-                        },
-                        {
-                          value: 580,
-                          name: 'Email'
-                        },
-                        {
-                          value: 484,
-                          name: 'Union Ads'
-                        },
-                        {
-                          value: 300,
-                          name: 'Video Ads'
-                        }
-                      ]
-                    }]
-                  });
-                });
-              </script>
-
-						</div>
-					</div>
-					<!-- End Website Traffic -->
-
-				</div>
-				<!-- End Right side columns -->
-
+				
 			</div>
 		</section>
 

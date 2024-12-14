@@ -17,7 +17,7 @@
 
 <!-- Favicons -->
 <link href="img/logox.png" rel="icon">
-<link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+<link href="/img/apple-touch-icon.png" rel="apple-touch-icon">
 
 <!-- Google Fonts -->
 <link href="https://fonts.gstatic.com" rel="preconnect">
@@ -83,12 +83,7 @@
 
                     <div class="col-12">
                         <label for="yourPassword" class="form-label">Mật khẩu</label>
-                        <div class="input-group has-validation">
-                        	<span class="input-group-text" id="inputGroupPrepend"><i class="bi bi-lock"></i></span>
-                        	<input type="password" name="password" class="form-control" id="yourPassword" required>
-                        </div>
-<!--                         <span class="input-group-text" id="inputGroupPrepend"><i class="bi bi-lock"></i></span>
-                        <input type="password" name="password" class="form-control" id="yourPassword" required> -->
+                        <input type="password" name="password" class="form-control" id="yourPassword" required>
                         <div class="invalid-feedback">Hãy nhập mật khẩu của bạn!</div>
                     </div>
 
@@ -100,9 +95,6 @@
                     </div>
                     <div class="col-12">
                         <button class="btn btn-primary w-100" type="submit">Đăng nhập</button>
-                    </div>
-                    <div class="col-12">
-                        <p class="small mb-0">Bạn không có tài khoản? <a href="register.jsp">Click!</a></p>
                     </div>
                     <% if (request.getParameter("error") != null) { %>
                     <div class="col-12">
