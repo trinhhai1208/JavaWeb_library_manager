@@ -37,13 +37,7 @@
 <!-- Template Main CSS File -->
 <link href="css/stylex.css" rel="stylesheet">
 
-<!-- =======================================================
-  * Template Name: NiceAdmin
-  * Template URL: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/
-  * Updated: Apr 20 2024 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+
 </head>
 
 <body>
@@ -83,16 +77,20 @@
 
                     <div class="col-12">
                         <label for="yourPassword" class="form-label">Mật khẩu</label>
-                        <input type="password" name="password" class="form-control" id="yourPassword" required>
-                        <div class="invalid-feedback">Hãy nhập mật khẩu của bạn!</div>
-                    </div>
-
-                    <div class="col-12">
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" name="remember" value="true" id="rememberMe">
-                            <label class="form-check-label" for="rememberMe">Ghi nhớ</label>
+                        <div class="input-group has-validation">
+                            <span class="input-group-text" id="inputGroupPrepend"><i class="bi bi-lock"></i></span>
+                            <input type="password" name="password" class="form-control" id="yourPassword" required>
+                        	<div class="invalid-feedback">Hãy nhập mật khẩu của bạn!</div>
                         </div>
                     </div>
+
+               <div class="col-12 d-flex justify-content-between align-items-center">
+    				<div>
+       					<input class="form-check-input" type="checkbox" name="remember" value="true" id="rememberMe">
+        				<label class="form-check-label" for="rememberMe">Ghi nhớ</label>
+   			 		</div>
+    				<a href="${pageContext.request.contextPath}/forgot-password.jsp" class="btn btn-link">Quên mật khẩu?</a>
+					</div>
                     <div class="col-12">
                         <button class="btn btn-primary w-100" type="submit">Đăng nhập</button>
                     </div>

@@ -241,14 +241,14 @@
         </tr>
     </thead>
     <tbody>
-        <%
+    <%
         ArrayList<Loan> loans = (ArrayList<Loan>) request.getAttribute("loans");
 
         SimpleDateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy");
 
         for (Loan loan : loans) {
         %>
-        <tr>
+        <tr id="loan-<%=loan.getLoan_id()%>">
             <th><%=loan.getLoan_id()%></th>
             <td><%=loan.getBook_title()%></td>
             <td><%=loan.getMember_name()%></td>
@@ -278,16 +278,6 @@
 
 	</main>
 
-	<footer id="footer" class="footer">
-		<div class="copyright">
-			&copy; Copyright <strong><span>NiceAdmin</span></strong>. All Rights
-			Reserved
-		</div>
-		<div class="credits">
-			Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-		</div>
-	</footer>
-
 	<!-- Modal -->
 <div class="modal fade" id="confirmReturnModal" tabindex="-1"
     aria-labelledby="confirmReturnModalLabel" aria-hidden="true">
@@ -308,6 +298,7 @@
     </div>
 </div>
 
+	
 	<a href="#"
 		class="back-to-top d-flex align-items-center justify-content-center"><i
 		class="bi bi-arrow-up-short"></i></a>
@@ -315,11 +306,6 @@
 	<script src="${pageContext.request.contextPath}/js/apexcharts.min.js"></script>
 	<script
 		src="${pageContext.request.contextPath}/js/bootstrap.bundle.min.js"></script>
-
-	<script src="/js/echarts.min.js"></script>
-
-	<script src="/js/tinymce.min.js"></script>
-	<script src="/js/validate.js"></script>
 	<script src="/js/main.js"></script>
 
 	<script>
@@ -336,7 +322,11 @@
     // Xử lý sự kiện khi click nút xác nhận trong modal
     document.getElementById('confirmReturnButton').addEventListener('click', function() {
         if (selectedLoanId) {
+            // Gửi yêu cầu trả sách về server
             document.getElementById('returnBookForm-' + selectedLoanId).submit();
+            
+            // Ẩn dòng đã trả sách
+            document.getElementById('loan-' + selectedLoanId).remove();
         }
     });
 });
