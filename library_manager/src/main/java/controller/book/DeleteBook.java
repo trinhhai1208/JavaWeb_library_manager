@@ -16,6 +16,10 @@ import util.ConnectionPoolImpl;
 
 @WebServlet("/delete-book")
 public class DeleteBook extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+	public DeleteBook(){
+		super();
+	}
 	
 	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {

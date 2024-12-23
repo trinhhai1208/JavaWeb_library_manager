@@ -439,11 +439,9 @@
 						</div>
 
 						<!-- End Reports -->
-
 						<!-- Recent Sales -->
 						<div class="col-12">
 							<div class="card recent-sales overflow-auto">
-
 								<div class="filter">
 									<a class="icon" href="#" data-bs-toggle="dropdown"><i
 										class="bi bi-three-dots"></i></a>

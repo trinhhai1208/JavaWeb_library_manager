@@ -10,7 +10,7 @@ public interface CategoryFunction<T>{
 	boolean deleteCategory(Category item);
 	public boolean deleteCategoryByID(int var1);
 	boolean editCategory(Category item);
-
+    
 	T getCategoryById(int var1);
 	ArrayList<T> getCategoryList();
 

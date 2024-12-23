@@ -15,21 +15,7 @@ import util.ConnectionPoolImpl;
 
 @WebServlet("/reset-password")
 public class ResetPasswordServlet extends HttpServlet{
-//	 protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-//	        String email = request.getParameter("email");
-//	        try {
-//	            // Placeholder for sending email logic
-//	            boolean emailSent = EmailUtility.sendPasswordResetEmail(email);
-//	            if (emailSent) {
-//	                response.sendRedirect("forgot-password.jsp?success=true");
-//	            } else {
-//	                response.sendRedirect("forgot-password.jsp?error=true");
-//	            }
-//	        } catch (Exception e) {
-//	            e.printStackTrace();
-//	            response.sendRedirect("forgot-password.jsp?error=true");
-//	        }
-//	    }
+
 	private static final long serialVersionUID = 1L;
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
